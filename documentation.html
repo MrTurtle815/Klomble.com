@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klomble | Documentation</title>
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="topbar">
+    <div class="topbar-logo">
+      <img src="images/KlombleLogo.png" class="topbar-logo-img" alt="Klomble Logo">
+    </div>
+    <ul class="topbar-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#documentation">Documentation</a></li>
+      <li><a href="index.html#download">Download</a></li>
+      <li><a href="license.html">License</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-docs">
+    <div class="container">
+      <div class="docs-card">
+        <h1 class="title-docs">Documentation</h1>        
+        <div class="code-container">
+          <pre><code class="language-cpp">// window functions
+
+KlombleWindow* klombleCreateWindow(int width, int height, const char* title); // Initalizes a window
+void klombleClearBackground(KlombleWindow* window, Klomble::Color color); // Sets the colour of the background
+void klombleCloseWindow(KlombleWindow* window); // Closes the given window
+int klombleUpdate(KlombleWindow* window); // loops every frame
+float klombleGetDeltaTime(); // returns the window's delta time
+
+// rendering
+
+void klombleDrawSquare(KlombleWindow* window, Klomble::Vec2 position, float size, float rotation, Klomble::Color color); // draws a square
+void klombleDrawTriangle(KlombleWindow* window, Klomble::Vec2 position, float size, float rotation, Klomble::Color color); // draws a triangle
+
+// helpers
+
+Klomble::Vec2(float x, float y) // klomble namespace helper for vec 2
+Klomble::Vec3(float x, float y, float z) // klomble namespace helper for vec 3
+Klomble::Color(int red, int green, int blue) // klomble namespace helper for RGB
+</code></pre>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+</html>
