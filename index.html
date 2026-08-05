@@ -35,12 +35,25 @@
       <h1 class="title-description">Klomble is a lightweight C++ library for <br> game development!</h1>
     </div>
   </section>
+
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title">What is Klomble?</h2>
+      <p class="section-subtitle">An open-source, single-header, multimedia library for C++ Graphics development!</p>
+
+      <div class="showcase-text" style="max-width: 800px; margin: 0 auto 50px auto; text-align: left;">
+        <p>Klomble is an open-source, single-header, multimedia library designed for graphics development without a steep learning curve! Instead of spending hours with OpenGL functions, build systems, or too many of linked dependencies, Klomble gives you a small, readable API that gets a window on screen and shapes rendering in just under 10 lines of code!</p>
+        <br>
+        <p>Klomble skips external dependencies entirely, loading only the specific OpenGL functions it actually needs, so compile times stay fast and overhead stays low!</p>
+      </div>
+    </div>
+  </section>
   
   <section class="code-showcase">
     <div class="showcase-container">
       <div class="showcase-text">
         <h2 class="title-code-example">Light weight, small, and efficient</h2>
-        <p>We compact all of the complex OpenGL functions into simple, easy to understand functions which both new developers, and experienced developers can understand and boost their workflow.</p>
+        <p>We compact all of the complex OpenGL functions into simple, easy to understand functions which both new developers, and experienced developers can understand and boost their workflow!</p>
         <ul class="feature-list">
           <li>Single-header design</li>
           <li>Modern OpenGL rendering</li>
@@ -77,22 +90,38 @@ int main() {
 
     <div class="features-grid">
       
-      <div class="feature-card">
-        <h3>Fast Initialization</h3>
-        <p>Get a window running and rendering shapes in under 10 lines of code!</p>
-      </div>
+        <div class="feature-card">
+          <h3>Single-Header Simplicity</h3>
+          <p>No Makefiles, no linking errors, no complicated build configuration. Just drop klomble.h into your project, include it, and get to work!</p>
+        </div>
 
-      <div class="feature-card">
-        <h3>Modern OpenGL</h3>
-        <p>Klomble fully utilizes modern VAOs and shaders. We dropped legacy OpenGL so your games run faster!</p>
-      </div>
+        <div class="feature-card">
+          <h3>Modern OpenGL Under the Hood!</h3>
+          <p>Klomble fully utilizes modern VAOs and shaders instead of the legacy fixed function pipeline, so the code it generates runs efficiently on all hardware!</p>
+        </div>
 
-      <div class="feature-card">
-        <h3>Single Header</h3>
-        <p>No Makefiles, no linking errors. Just drop klomble.h into your project, include it, and get to work!</p>
+        <div class="feature-card">
+          <h3>Simple to understand!</h3>
+          <p>Klomble takes only the OpenGL functions it needs, and compacts them into simple and easy functions that everyone can understand!</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Klomble helpers!</h3>
+          <p>Lightweight helper types like Klomble::Vec2, Klomble::Vec3, and Klomble::Color make positioning objects and setting colours easy and simple, without needing an external math library!</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Fast to Get Started</h3>
+          <p>Because there's nothing to compile or link separately, you can go from downloading Klomble.h to a running window with rendered shapes in under 10 lines of code!</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Free & Open Source</h3>
+          <p>Klomble is released under the Zlib license, so it's free to use in both personal and commercial projects! The full source code is available on GitHub for anyone to inspect, use, or contribute to!</p>
+        </div>
+
       </div>
     </div>
-  </div>
 </section>
 
 
@@ -100,6 +129,7 @@ int main() {
   <div class="container center-text">
     <h2>Klomble Download</h2>
     <p>Download, and start coding in under 2 minutes! Just download Klomble.h from Github, <br> include it in your code and get to work! Not sure how to use Klomble? Look at our documentation!</p>
+    <p>This project is inspired by both Graphics.h and rayLib!</p>
     <div class="button-group">
       <a href="https://github.com/MrTurtle815/Klomble" class="btn btn-primary">Download on GitHub</a>
       <a href="documentation.html" class="btn btn-secondary">Read the Docs</a>
