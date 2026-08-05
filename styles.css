@@ -262,6 +262,12 @@
   background: linear-gradient(135deg, #342a9b 0%, #2563eb 50%, #3b82f6 100%);
   color: white;
   min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .hero-license {
