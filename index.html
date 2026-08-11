@@ -49,17 +49,21 @@
       </div>
       
       <div class="code-container">
-        <pre><code class="language-cpp">// simple window and square example in C++ using Klomble
+        <pre><code class="language-cpp">// basic square and triangle example in C++ using klomble
+
+#define KLOMBLE_IMPLEMENTATION // define klomble implementation
 
 #include "../Klomble.h" // main klomble header file
 
 int main() {
-    KlombleWindow* mainWindow = klombleCreateWindow(800, 600, "Main Game"); // create window
+    Klomble::KlombleWindow* mainWindow = klombleCreateWindow(800, 600, "Main Game"); // create window
 
     while (klombleUpdate(mainWindow)) {
         // update loop
-        klombleClearBackground(mainWindow, Klomble::Color(225, 225, 225));
-        klombleDrawSquare(mainWindow, Klomble::Vec2(-0.5f, 0.0f), 0.4f, 0.0f, Klomble::Color(0, 255, 0));
+        klombleClearBackground(mainWindow, Klomble::Color(225, 225, 225)); // sets the background colour
+
+        klombleDrawSquare(mainWindow, Klomble::Vec2(-0.5f, 0.0f), 0.4f, 0.0f, Klomble::Color(0, 255, 0)); // draws a green square
+        klombleDrawTriangle(mainWindow, Klomble::Vec2(0.5f, 0.0f), 0.4f, 0.0f, Klomble::Color(255, 0, 0)); // draws a red triangle
     }
 
     klombleCloseWindow(mainWindow); // closes window
