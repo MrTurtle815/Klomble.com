@@ -1,0 +1,355 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* text */
+
+.title-description {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.title-license {
+  font-family: "Arial", sans-serif;
+  color: #1e293b;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 16px;
+}
+
+.title-code-example {
+  font-family: "Bakbak One", sans-serif;
+  color: #475569;
+  font-size: 32px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.code-showcase {
+  padding: 80px 20px;
+  background-color: #f8fafc;
+}
+
+.showcase-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.showcase-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.showcase-text p {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #475569;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.feature-list {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #334155;
+  line-height: 1.8;
+  font-size: 16px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.code-container {
+  flex: 1;
+  min-width: 750px;
+  width: 100%;
+
+  background: #282c34;
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-container pre {
+  margin: 0;
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.code-container code {
+  font-family: "Fira Code", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.download-cta {
+  padding: 100px 20px;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.download-cta h2 {
+  font-family: "Bakbak One", sans-serif;
+  font-size: 36px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.download-cta p {
+  color: #94a3b8;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.features-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Bakbak One", sans-serif;
+  color: #475569;
+  font-size: 36px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.section-subtitle {
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #f8fafc;
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* top bar */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+}
+
+.topbar-logo-img {
+  width: 160px;
+  height: auto;
+}
+
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.topbar-links li {
+  margin-left: 30px;
+}
+
+.topbar-links a {
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+  font-family: "Bakbak One", sans-serif;
+  color: #342a9b;
+}
+
+.topbar-links a:hover {
+  color: #2563eb;
+}
+
+/* background */
+
+.hero {
+  background: linear-gradient(135deg, #342a9b 0%, #2563eb 50%, #3b82f6 100%);
+  color: white;
+  min-height: 85vh;
+}
+
+.hero-license {
+  background: linear-gradient(135deg, #342a9b 0%, #2563eb 50%, #3b82f6 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.hero-docs {
+  background: linear-gradient(135deg, #342a9b 0%, #2563eb 50%, #3b82f6 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.license-card {
+  background: #ffffff;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+  color: #334155;
+  line-height: 1.6;
+}
+
+.docs-card {
+  background: #ffffff;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+  color: #334155;
+  line-height: 1.6;
+}
+
+.title-docs {
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 16px;
+}
+
+.copyright-box {
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-family: monospace;
+}
+
+.license-card p {
+  margin-bottom: 20px;
+}
+
+.license-rules {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.license-rules li {
+  margin-bottom: 16px;
+}
+
+/* images */
+
+.white-image {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1);
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klomble | A lightweight C++ library for game development!</title>
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+
+<nav class="topbar">
+  <div class="topbar-logo">
+    <img src="images/KlombleLogo.png" class="topbar-logo-img" alt="Klomble Logo">
+  </div>
+  <ul class="topbar-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="documentation.html">Documentation</a></li>
+    <li><a href="https://github.com/MrTurtle815/Klomble">Download</a></li>
+    <li><a href="license.html">License</a></li>
+  </ul>
+</nav>
+
+  <section class="hero">
+    <div class="container">
+      <img src="images/KlombleLogo.png" class="white-image" alt="Klomble Logo">
+      <h1 class="title-description">Klomble is a lightweight C++ library for <br> game development!</h1>
+    </div>
+  </section>
+  
+  <section class="code-showcase">
+    <div class="showcase-container">
+      <div class="showcase-text">
+        <h2 class="title-code-example">Light weight, small, and efficient</h2>
+        <p>We compact all of the complex OpenGL functions into simple, easy to understand functions which both new developers, and experienced developers can understand and boost their workflow.</p>
+        <ul class="feature-list">
+          <li>Single-header design</li>
+          <li>Modern OpenGL rendering</li>
+          <li>Compact and efficient</li>
+        </ul>
+      </div>
+      
+      <div class="code-container">
+        <pre><code class="language-cpp">// simple window and square example in C++ using Klomble
+
+#include "../Klomble.h" // main klomble header file
+
+int main() {
+    KlombleWindow* mainWindow = klombleCreateWindow(800, 600, "Main Game"); // create window
+
+    while (klombleUpdate(mainWindow)) {
+        // update loop
+        klombleClearBackground(mainWindow, Klomble::Color(225, 225, 225));
+        klombleDrawSquare(mainWindow, Klomble::Vec2(-0.5f, 0.0f), 0.4f, 0.0f, Klomble::Color(0, 255, 0));
+    }
+
+    klombleCloseWindow(mainWindow); // closes window
+    return 0;
+}</code></pre>
+      </div>
+
+    </div>
+  </section>
+
+<section class="features-section">
+  <div class="container">
+    <h2 class="section-title">Klomble's Features</h2>
+    <p class="section-subtitle">Klomble is built for modern C++ game development</p>
+
+    <div class="features-grid">
+      
+      <div class="feature-card">
+        <h3>Fast Initialization</h3>
+        <p>Get a window running and rendering shapes in under 10 lines of code!</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Modern OpenGL</h3>
+        <p>Klomble fully utilizes modern VAOs and shaders. We dropped legacy OpenGL so your games run faster!</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Single Header</h3>
+        <p>No Makefiles, no linking errors. Just drop klomble.h into your project, include it, and get to work!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="download-cta">
+  <div class="container center-text">
+    <h2>Klomble Download</h2>
+    <p>Download, and start coding in under 2 minutes! Just download Klomble.h from Github, <br> include it in your code and get to work! Not sure how to use Klomble? Look at our documentation!</p>
+    <div class="button-group">
+      <a href="https://github.com/MrTurtle815/Klomble" class="btn btn-primary">Download on GitHub</a>
+      <a href="documentation.html" class="btn btn-secondary">Read the Docs</a>
+    </div>
+  </div>
+</section>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+</html>
