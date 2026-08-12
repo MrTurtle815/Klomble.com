@@ -34,24 +34,50 @@
       <div class="docs-card">
         <h1 class="title-docs">Documentation</h1>        
         <div class="code-container">
-          <pre><code class="language-cpp">// window functions
+          <pre><code class="language-cpp">// ==========================================
+// KLOMBLE DOCUMENTATION (V0.1 - Alpha)
+// ==========================================
 
-KlombleWindow* klombleCreateWindow(int width, int height, const char* title); // Initalizes a window
-void klombleClearBackground(KlombleWindow* window, Klomble::Color color); // Sets the colour of the background
-void klombleCloseWindow(KlombleWindow* window); // Closes the given window
-int klombleUpdate(KlombleWindow* window); // loops every frame
-float klombleGetDeltaTime(); // returns the window's delta time
+// window and core functions
 
-// rendering
+Klomble::KlombleWindow* klombleCreateWindow(int width, int height, const char* title); // Initializes a window
+void klombleClearBackground(Klomble::KlombleWindow* window, Klomble::Color color); // Sets the colour of the background
+void klombleCloseWindow(Klomble::KlombleWindow* window); // Closes the given window
+void klombleSetWindowTitle(Klomble::KlombleWindow* window, const char* title); // Changes the title of an open window
+int klombleUpdate(Klomble::KlombleWindow* window); // Loops every frame
+float klombleGetDeltaTime(); // Returns the window's delta time
+float klombleGetFPS(); // Returns the current frame per second
 
-void klombleDrawSquare(KlombleWindow* window, Klomble::Vec2 position, float size, float rotation, Klomble::Color color); // draws a square
-void klombleDrawTriangle(KlombleWindow* window, Klomble::Vec2 position, float size, float rotation, Klomble::Color color); // draws a triangle
+// 2d rendering
+
+void klombleDrawSquare(Klomble::KlombleWindow* window, Klomble::Vec2 position, float size, float rotation, Klomble::Color color); // Draws a 2D square
+void klombleDrawTriangle(Klomble::KlombleWindow* window, Klomble::Vec2 position, float size, float rotation, Klomble::Color color); // Draws a 2D triangle
+void klombleDrawCircle(Klomble::KlombleWindow* window, Klomble::Vec2 position, float size, Klomble::Color color); // Draws a 2D circle
+
+// 3d rendering
+
+void klombleDrawCube(Klomble::KlombleWindow* window, Klomble::Vec3 position, float size, Klomble::Vec3 rotation, Klomble::Color color); // Draws a 3D cube
+void klombleDrawSphere(Klomble::KlombleWindow* window, Klomble::Vec3 position, float size, Klomble::Vec3 rotation, Klomble::Color color); // Draws a 3D sphere
+
+// camera
+
+void klombleSetActiveCamera(Klomble::Camera3D* cam); // Sets the active camera for 3D rendering
+void klombleUpdateFreeCamera(Klomble::KlombleWindow* window, Klomble::Camera3D& cam, float speed = 3.0f, float sensitivity = 0.15f); // Handles free camera movement
+
+// input
+
+bool klombleIsKeyDown(int key); // Returns true if the specified Klomble::Key is currently pressed
+
+/*
+Has standard letters Klomble::A to Klomble::Z, and numbers Klomble::Num0 to Klomble::Num9,
+and specials Klomble::Space, Klomble::Enter, Klomble::Escape, Klomble::Up, Klomble::Down*/
 
 // helpers
 
-Klomble::Vec2(float x, float y) // klomble namespace helper for vec 2
-Klomble::Vec3(float x, float y, float z) // klomble namespace helper for vec 3
-Klomble::Color(int red, int green, int blue) // klomble namespace helper for RGB
+Klomble::Vec2(float x, float y) // Klomble namespace helper for Vec2
+Klomble::Vec3(float x, float y, float z) // Klomble namespace helper for Vec3
+Klomble::Color(int red, int green, int blue) // Klomble namespace helper for RGB
+Klomble::Camera3D(Vec3 pos, Vec3 rot, Vec2 mosPos, Vec2 lastMosPos, float fov) // Klomble namespace helper for 3D cameras
 </code></pre>
         </div>
 
