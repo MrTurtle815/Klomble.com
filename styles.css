@@ -27,6 +27,17 @@
   padding-bottom: 16px;
 }
 
+.title-releases {
+  font-family: "Arial", sans-serif;
+  color: #1e293b;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
 .title-code-example {
   font-family: "Bakbak One", sans-serif;
   color: #475569;
@@ -274,6 +285,22 @@
   font-family: system-ui, -apple-system, sans-serif;
 }
 
+.hero-releases {
+  background: linear-gradient(135deg, #342a9b 0%, #2563eb 50%, #3b82f6 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  align-items: flex-start; 
+  
+  padding-top: 80px; 
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
 .hero-docs {
   background: linear-gradient(135deg, #342a9b 0%, #2563eb 50%, #3b82f6 100%);
   min-height: 100vh;
@@ -287,6 +314,20 @@
 .license-card {
   background: #ffffff;
   max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+  color: #334155;
+  line-height: 1.6;
+}
+
+.releases-card {
+  background: #ffffff;
+  max-width: 1500px;
   width: 100%;
   margin: 0 auto;
   padding: 40px;
@@ -341,6 +382,19 @@
 }
 
 .license-rules li {
+  margin-bottom: 16px;
+}
+
+.releases-card p {
+  margin-bottom: 20px;
+}
+
+.releases-rules {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.releases-rules li {
   margin-bottom: 16px;
 }
 
